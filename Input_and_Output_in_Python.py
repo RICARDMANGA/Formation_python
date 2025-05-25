@@ -1,16 +1,16 @@
+# commit "Find DataType of Input in Python"
 
-# Prompting the user for input
-age_input = input("Enter your age: ")
+a = "Hello World"
+b = 10
+c = 11.22
+d = ("Geeks", "for", "Geeks")
+e = ["Geeks", "for", "Geeks"]
+f = {"Geeks": 1, "for":2, "Geeks":3}
 
-# Converting the input to an integer
-age = int(age_input)
 
-# Checking conditions based on user input
-if age < 0:
-    print("Please enter a valid age.")
-elif age < 18:
-    print("You are a minor.")
-elif age >= 18 and age < 65:
-    print("You are an adult.")
-else:
-    print("You are a senior citizen.")
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
