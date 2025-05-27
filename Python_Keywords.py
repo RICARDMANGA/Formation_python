@@ -1,16 +1,28 @@
-##   Iteration Keywords: for, while, break, continue, pass in Python
-#  'for' loop example
-for num in range(3):
-    if num == 2:
-        continue  # Skip number 2
-    print(num)
-# Output: 0 1
+a, b = 4, 0
 
-# 'while' loop example
-count = 0
-while count < 4:
-    count += 1
-    if count == 3:
-        break  # Exit the loop when count reaches 4
-    print(count)
-# Output: 1 2
+
+try:
+    k = a // b  # Attempt integer division (4 // 0)
+    print(k)
+    
+# This block catches the ZeroDivisionError
+except ZeroDivisionError: 
+    print("Can't divide by zero")
+
+finally:
+    # This block is always executed regardless of the exception
+    print('This is always executed')
+
+
+print("The value of a / b is : ")
+
+# Will raise an AssertionError because b == 0
+assert b != 0, "Divide by 0 error"  
+
+# Division is attempted but will not reach due to assert
+print(a / b)  
+
+# Raise a TypeError if the strings are different
+temp = "geeks for geeks"
+if temp != "geeks":
+    raise TypeError("Both the strings are different.")
