@@ -1,8 +1,19 @@
+
+
+
+
+
+
+
+
+
+
+
 import array as arr
 
-# creating array
+# Integer array example
 a = arr.array('i', [1, 2, 3])
+print("Integer Array before insertion:", *a)
 
-# iterating and printing each item
-for i in range(0, 3):
-    print(a[i], end=" ")
+a.insert(1, 4)  # Insert 4 at index 1
+print("Integer Array after insertion:", *a)
